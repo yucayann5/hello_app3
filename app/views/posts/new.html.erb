@@ -1,7 +1,9 @@
 <div class="main posts-new">
   <div class="container">
-    <h1 class="form-heading">
-      <%= @message %>
+  
+   <h1 class="form-heading">
+     <%= ENV['WHO_HOGE'] %>
+     <%= @message %>
     </h1>
     <p class="form-body">※リロードすると質問が変わります</p>
     <%= form_tag("/posts/create") do %>
