@@ -20,12 +20,18 @@ class PostsController < ApplicationController
       #{name}さんをあなたが採用するなら、どんなポジションにしますか？
   )
     @message = messages.sample
+    @post = Post.new
   end
 
   def create
     @post = Post.new(content: params[:content])
     @post.save
-    redirect_to("/posts/index")
+    if @post.save
+      flash[:notice] = "TRUSTを投稿しました！"
+      redirect_to("/posts/index")
+    else
+      render("posts/new")
+    end
   end
 
   def edit
@@ -39,7 +45,7 @@ class PostsController < ApplicationController
       flash[:notice] = "投稿を編集しました！"
       redirect_to("/posts/index")
     else
-      render("/posts/edit")
+      render("posts/edit")
     end
   end
 
