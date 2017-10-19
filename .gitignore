@@ -24,3 +24,6 @@
 # Editor artifacts
 *.sw[pon]
 *~
+
+# Rails settings
+config/*.yml

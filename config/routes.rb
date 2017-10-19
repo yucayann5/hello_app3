@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   get "/" => "home#top"
   get "/about" => "home#about"
 
+  get 'login', to: 'sessions#login'
+  get 'auth/:provider/callback', to: 'sessions#callback'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'application#hello'
 end
