@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   get "posts/:id/edit" => "posts#edit"
   post "posts/:id/update" => "posts#update"
   post "posts/:id/destroy" => "posts#destroy"
-  
+
+  resources :users, only: %i(index) do
+    resources :trusts
+  end
+
   get "/" => "home#top"
   get "/about" => "home#about"
 

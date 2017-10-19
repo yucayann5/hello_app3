@@ -1,0 +1,23 @@
+<div class="main">
+  <div class="container">
+    <h2><%= @user.name %>さんのTRUST一覧</h2>
+    <div class="trust-new-button">
+      <button><%= link_to "TRUSTを書く", new_user_trust_path(@user) %></button>
+    </div>
+    <% @user_trusts.each do |user_trust| %>
+      <div class="trusts-index-item">
+        <div class="truster-content">
+          <div>
+            <%= user_trust.content %>
+          </div>
+          <div class="truster-profile">
+            <%= link_to user_trusts_path(user_trust.from_user) do %>
+              from <%= user_trust.from_user.name %>
+              <img src="<%= user_trust.from_user.profile_image_url %>" />
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
