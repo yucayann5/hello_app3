@@ -17,8 +17,9 @@ class PostsController < ApplicationController
       #{name}さんとの関係は？
       #{name}さんの尊敬しているところは？
       #{name}さんの弱みをしいてあげるなら？
-      #{name}さんは何をしているひと？
+      #{name}さんはどこで何をしているひと？
       #{name}さんのスキルは？
+      #{name}さんが経験した会社は？
       #{name}さんをあなたが採用するなら、どんなポジションにしますか？
   )
     @message = messages.sample
