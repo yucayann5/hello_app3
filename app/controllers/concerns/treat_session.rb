@@ -18,7 +18,7 @@ module TreatSession
     end
 
     def login_user
-      @user ||= User.find_by(id: login_user_id)
+      @login_user ||= User.find_by(id: login_user_id)
     end
 
     def login_user_id
