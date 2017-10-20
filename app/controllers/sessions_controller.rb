@@ -2,6 +2,8 @@ class SessionsController < ApplicationController
   before_action :check_state, only: %i(callback)
 
   def login
+    return redirect_to root_path if logged_in?
+
     login_state = SecureRandom.uuid
     session[:login_state] = login_state
     session[:original_url] = request.referer
