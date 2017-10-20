@@ -1,0 +1,14 @@
+<div class="main trusts-new">
+  <div class="container">
+    <h1 class="form-heading">編集する</h1>
+    <%= form_for @user_trust, url: user_trust_path, method: :put do |f| %>
+      <div class="form">
+        <div class="form-body">
+          <%= f.text_area :content %>
+          <%= f.submit "更新" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+

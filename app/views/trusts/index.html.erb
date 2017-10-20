@@ -1,16 +1,18 @@
 <div class="main">
   <div class="container">
-    <h2><%= @user.name %>さんのTRUST一覧</h2>
-    <% if @user.id != current_user.id %>
+    <h2><%= current_user.name %>さんのTRUST一覧</h2>
+    <% if current_user.id != login_user.id %>
       <div class="trust-new-button">
-        <button><%= link_to "TRUSTを書く", new_user_trust_path(@user) %></button>
+        <button><%= link_to "TRUSTを書く", new_user_trust_path(current_user) %></button>
       </div>
     <% end %>
     <% @user_trusts.each do |user_trust| %>
       <div class="trusts-index-item">
         <div class="truster-content">
           <div>
-            <%= user_trust.content %>
+            <%= link_to user_trust_path(current_user, user_trust) do %>
+              <%= simple_format user_trust.content %>
+            <% end %>
           </div>
           <div class="truster-profile">
             <%= link_to user_trusts_path(user_trust.from_user) do %>

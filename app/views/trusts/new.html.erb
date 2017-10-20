@@ -1,7 +1,7 @@
 <div class="main">
   <div class="container">
     <h1>
-      <%= @message %>
+      <%= get_trust_theme_message(@user.name) %>
     </h1>
     <%= form_for @user_trust do |f| %>
       <div class="form">
