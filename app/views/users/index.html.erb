@@ -1,0 +1,15 @@
+<div class="main">
+  <div class="container">
+    <ul>
+      <% @users.each do |user| %>
+        <div class="users-index-item">
+          <%= link_to user_trusts_path(user) do %>
+            <image src="<%= user.profile_image_url %>" />
+            <br>
+            <%= user.name %>
+          <% end %>
+        </div>
+      <% end %>
+    </ul>
+  </div>
+</div>

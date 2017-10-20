@@ -1,0 +1,16 @@
+<div class="main user-trusts-show">
+  <div class="container">
+    <div class="trusts-show-item">
+      <p>
+        <%= @user_trust.content %>
+      </p>
+      <div class="trusts-time">
+        <%= @user_trust.created_at %>
+      </div>
+      <div class="trusts-menus">
+        <%= link_to '編集', edit_user_trust_path(current_user, @user_trust) %>
+        <%= link_to '削除', user_trust_path(current_user, @user_trust), method: :delete, data: { confirm: '本当に削除しますか？' } %>
+      </div>
+    </div>
+  </div>
+</div>
