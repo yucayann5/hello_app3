@@ -1,13 +1,63 @@
-<div class="main top-main">
-  <div class="top-message">
-    <h2>あなたを知ってる、あなたを待ってる人がいる</h2>
-      <p></br>YOUTRUST は友達もしくはその友達からのみスカウトが来るビジネスSNSです</p>
-      <p>履歴書は不要。あなたのことをよく知る人からのスカウトで、気持ちのよい仕事探しを！</p>
-    <div class="btn-wrapper">
-        <a href="#" class="btn facebook">Facebookで今すぐログイン</a>
-    </div>
-  </div>
 
   <!-- ============================== /Header Area ============================== -->
+  <html>
+    <head>
+      <title>HelloApp3</title>
+      <%= csrf_meta_tags %>
 
-  <!-- ============================== Main Area ============================== -->
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+
+    <body>
+      <header>
+        <div class="header-logo">
+          <img class="header-logo-text" src=<%= image_url('youtrust_logo_text.png') %>>
+        </div>
+        <ul class="header-menus">
+          <li>
+            <%= link_to("採用担当の方はこちら","/about") %>
+          </li>
+          <li>
+            <%= link_to "ログイン", login_path %>
+          </li>
+        </ul>
+      </header>
+
+      <div class="top-wrapper">
+        <div class="container">
+          <h2>あなたを知ってる、あなたを待ってる人がいる</h2>
+          <p></br>YOUTRUST は友達もしくはその友達からのみスカウトが来るビジネスSNSです</p>
+          <p>履歴書は不要。あなたのことをよく知る人からのスカウトで、気持ちのよい仕事探しを！</p>
+            <div class="btn-wrapper">
+              <a href="#" class="btn facebook">Facebookで今すぐログイン</a>
+           </div>
+        </div>
+      </div>
+
+      <div class="step-wrapper">
+        <div class="container2">
+          <div class="heading">
+            <h2>たったの３ステップで友達に誘われる</h2>
+          </div>
+          <div class="discription">
+          </div>
+        </div>
+      </div>
+
+<div class="features-wrapper">
+
+</div>
+
+<div class="message-wrapper">
+
+</div>
+
+<footer>
+
+</footer>
+
+
+      <%= yield %>
+    </body>
+  </html>
