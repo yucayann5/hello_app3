@@ -42,7 +42,7 @@ form input[type="submit"] {
 /* 共通レイアウト ================================ */
 body {
   color: #2d3133;
-  background-color: #3ecdc6;
+  background-color: rgba(255,144,70,0.83);
   margin: 0;
   min-height: 1vh;
 }
@@ -81,7 +81,7 @@ header {
 }
 
 .header-logo a{
-  color: white;
+  color: rgba(55,54,54,0.83);
   font-size: 22px;
 }
 
@@ -94,14 +94,14 @@ header {
   float: left;
   line-height: 64px;
   font-size: 13px;
-  color: white;
+  color: rgba(55,54,54,0.83);
   padding-left: 15px;
 }
 
 .header-menus a {
   float: left;
   font-size: 13px;
-  color: white;
+  color: rgba(55,54,54,0.83);
 }
 
 .header-menus .fa {
@@ -112,7 +112,7 @@ header {
   padding: 0 20px;
   float: left;
   line-height: 64px;
-  color: white;
+  color: rgba(55,54,54,0.83);
   margin: 0;
   font-size: 13px;
 }
@@ -150,8 +150,23 @@ header {
   font-family: HiraginoSans-W4;
   font-size: 18px;
   color: rgba(55,54,54,0.83);
-  letter-spacing: -0.04px;
+  letter-spacing: 2.3px;
   line-height: 30px;
+}
+
+.btn {
+  margin: 32px 0 0 0;
+  padding: 12px 24px 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 7px;
+  letter-spacing: 2.3px;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
 }
 
 /* about ================================ */
