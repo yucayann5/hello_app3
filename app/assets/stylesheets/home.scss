@@ -43,7 +43,7 @@ form input[type="submit"] {
 body {
   color: #2d3133;
   margin: 0;
-  background-color: rgba(255, 144, 77, 0.5)
+  background-color: white;
 }
 
 .main {
@@ -78,14 +78,14 @@ header {
 }
 
 .header-logo-text{
-  padding-top: 13px;
+  padding-top: 25px;
   padding-left: 20px;
   width: 240px;
   height: auto;
 }
 
 .header-logo a{
-  color: rgba(55,54,54,0.83);
+  color: black;
   font-size: 22px;
 }
 
@@ -98,14 +98,14 @@ header {
   float: left;
   line-height: 64px;
   font-size: 13px;
-  color: rgba(55,54,54,0.83);
+  color: black;
   padding-left: 15px;
 }
 
 .header-menus a {
   float: left;
   font-size: 13px;
-  color: rgba(55,54,54,0.83);
+  color: black;
 }
 
 .header-menus .fa {
@@ -116,7 +116,7 @@ header {
   padding: 0 20px;
   float: left;
   line-height: 64px;
-  color: rgba(55,54,54,0.83);
+  color: black;
   margin: 0;
   font-size: 13px;
 }
@@ -129,7 +129,6 @@ header {
   top: 0;
   width: 100%;
   min-height: 100%;
-  background-image: image-url("top-background-image.png");
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: 100%;
@@ -137,21 +136,25 @@ header {
 
 
 .top-wrapper h2 {
-  /* あなたを知ってる、あなたを待ってる人がい: */
-  font-family: HiraginoSans-W4;
-  font-size: 44px;
-  color: rgba(55,54,54,0.83);
-  letter-spacing: 4.67px;
-  font-weight: normal;
+  /* あなたを知ってる、 あなたを待ってる人が: */
+  font-family: HiraginoSans-W7;
+  font-size: 50px;
+  color: rgba(1,1,1,0.83);
+  letter-spacing: 3.21px;
+  line-height: 96px;
 }
 
 .top-wrapper p {
-  /* YOUTRUST は友達もしくはその友達: */
+  /* 元同僚からスカウトが来るヘッドハンティン: */
   font-family: HiraginoSans-W4;
   font-size: 24px;
-  color: rgba(55,54,54,0.83);
-  letter-spacing: 2.3px;
+  color: #000000;
+  letter-spacing: -0.05px;
   line-height: 30px;
+}
+
+.under{
+  border-bottom: solid 4px rgba(104,176,14,0.8);
 }
 
 .btn {
@@ -176,7 +179,6 @@ header {
 .step-wrapper {
   height: 840px;
   padding-bottom: 100px;
-  background-color: #f7f7f7;
   text-align: center;
 }
 
@@ -190,7 +192,7 @@ header {
   /* たったの３ステップで友達に誘われる: */
   font-family: HiraginoSans-W3;
   font-size: 30px;
-  color: rgba(55,54,54,0.83);
+  color: black;
   letter-spacing: 5.68px;
   line-height: 28px;
   font-weight: normal;
@@ -206,20 +208,17 @@ header {
 .features-wrapper {
   height: 550px;
   padding-bottom: 80px;
-  background-color: #f7f7f7;
+  display: inline-block;
   text-align: center;
 }
 
 .feature {
   position: relative;
   float: left;
-  width: 43%;
-  text-align: center; 
+  width: 40%;
 }
 
 .feature-box {
-  top: 0px;
-  left: 0px;
   width: 100%;
 }
 
@@ -237,9 +236,9 @@ header {
   top: 200px;
   left: 50px;
   width: 80%;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: normal;
-  color: rgba(55,54,54,0.83);
+  color: black;
 }
 
 .feature p{
@@ -248,8 +247,8 @@ header {
   left: 50px;
   width: 80%;
   font-family: HiraginoSans-W4;
-  font-size: 18px;
-  color: rgba(55,54,54,0.83);
+  font-size: 16px;
+  color: black;
   letter-spacing: 1.66px;
   line-height: 28px;
   display: inline-block;
@@ -260,7 +259,7 @@ header {
 .message-wrapper {
   height: 250px;
   padding-bottom: 80px;
-  background-color: rgba(255, 144, 70, 0.002);
+  background-color: rgba(255, 144, 70, 0.001);
   text-align:center;
 }
 
@@ -268,7 +267,17 @@ header {
   /* 早速つかってみる！: */
   font-family: HiraginoSans-W4;
   font-size: 36px;
-  color: rgba(55,54,54,0.83);
+  color: black;
+  letter-spacing: 5.68px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.message strong{
+  /* 早速つかってみる！: */
+  font-family: HiraginoSans-W4;
+  font-size: 36px;
+  color: rgba(104,176,14,1);
   letter-spacing: 5.68px;
   line-height: 28px;
   font-weight: normal;
