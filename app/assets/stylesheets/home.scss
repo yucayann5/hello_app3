@@ -200,7 +200,6 @@ hr {
 
 .heading {
   padding: 60px 0 30px 0;
-  color: #5f5d60;
   text-align: center;
 }
 
@@ -216,10 +215,43 @@ hr {
   padding-top: 20px;
 }
 
+.step {
+  padding: 0.5em 1em;
+  margin-left: 20px;
+  font-weight: bold;
+  border: solid 3px #000000;
+  width: 55%;
+  height: 300px;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.step h1 {
+  font-size: 60px;
+  padding-left: 15px;
+  display: inline-block;
+  float: left;
+  color: black;
+}
+
+.step h2 {
+  padding-top: 25px;
+  padding-left: 75px;
+  color: black;
+}
+
+.step p {
+  padding-left: 75px;
+  width: 500px;
+  color: black;
+}
+
 .step-image {
   width: 750px;
   margin-top: 20px;
-}
+  }
+
 
 /* 特長 ================================ */
 .features-wrapper {
