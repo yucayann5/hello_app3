@@ -114,6 +114,16 @@ header {
   padding-right: 5px;
 }
 
+.btn-header {
+  margin: 32px 0 0 0;
+  padding: 12px 24px 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 7px;
+  letter-spacing: 2.3px;
+}
+
 .header-menus input[type="submit"] {
   padding: 0 20px;
   float: left;
@@ -151,7 +161,6 @@ header {
   font-family: HiraginoSans-W4;
   font-size: 24px;
   color: #000000;
-  letter-spacing: -0.05px;
   line-height: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -159,9 +168,20 @@ header {
 
 .under-top{
   border-bottom: solid 9px rgba(104,176,14,0.75);
+  padding-bottom: 12px;
+}
+
+.under-heading{
+  border-bottom: solid 6px rgba(104,176,14,0.75);
+  padding-bottom: 10px;
 }
 
 .under{
+  border-bottom: solid 6px rgba(104,176,14,0.75);
+  padding-bottom: 5px;
+}
+
+.under-feature{
   border-bottom: solid 6px rgba(104,176,14,0.75);
 }
 
@@ -221,10 +241,10 @@ hr {
   font-weight: bold;
   border: solid 3px #000000;
   width: 55%;
-  height: 300px;
+  height: 180px;
   display: inline-block;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .step h1 {
@@ -238,6 +258,7 @@ hr {
 .step h2 {
   padding-top: 25px;
   padding-left: 75px;
+  font-size: 28px;
   color: black;
 }
 
@@ -247,10 +268,29 @@ hr {
   color: black;
 }
 
-.step-image {
-  width: 750px;
-  margin-top: 20px;
+.step-image1 {
+  height: 120px;
+  position: relative;
+  right: 16px;
+  bottom: 120px;
+  float: right;
   }
+
+.step-image2 {
+  height: 100px;
+  position: relative;
+  right: 38px;
+  bottom: 110px;
+  float: right;
+}
+
+.step-image3 {
+    height: 100px;
+    position: relative;
+    right: 45px;
+    bottom: 115px;
+    float: right;
+}
 
 
 /* 特長 ================================ */
@@ -268,13 +308,14 @@ hr {
 
 .feature {
   padding: 0.5em 1em;
-  margin-left: 20px;
+  margin-left: 30px;
   font-weight: bold;
   display: inline-block;
   border: solid 3px #000000;
   width: 35%;
   height: 300px;
   vertical-align: top;
+  text-align: center;
 }
 
 
@@ -323,6 +364,24 @@ hr {
   letter-spacing: 5.68px;
   line-height: 28px;
 }
+
+/* footer ================================ */
+
+footer {
+  height: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+  text-align:center;
+  font-family: "Amiko", "Helvetica", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.copyright p{
+  margin: 5px;
+  padding: 5px;
+  font-size: 5px;
+}
+
 
 /* about ================================ */
 .about-main {
